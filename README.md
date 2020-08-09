@@ -22,7 +22,7 @@
 }
 ```
 
-**Grid area** är ett tredje sätt att layouta med hjälp av grid som lägger man all layyoutinformation i *grid-containern*. Du namnger varje grid-item, och talar sedan i grid-containern om var den ska ligga med hjälp av strängar. Ex.
+**Grid templates** är ett tredje sätt att layouta med hjälp av grid som lägger man all layyoutinformation i *grid-containern*. Du namnger varje grid-item, och talar sedan i grid-containern om var den ska ligga med hjälp av strängar. Ex.
 
 ```css
 
