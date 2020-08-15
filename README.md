@@ -9,7 +9,7 @@ Använd endast HTML och CSS med ett static grid för att göra en tärnings 6 ol
 
 Förslag på html-struktur:
 
-```html```
+```html
 <article class="dice dots-6">
     <aside></aside>
     <aside></aside>
