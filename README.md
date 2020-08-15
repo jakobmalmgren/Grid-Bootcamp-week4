@@ -5,7 +5,7 @@
 ## Grid dices
 Använd endast HTML och CSS med ett static grid för att göra en tärnings 6 olika sidor.
 
-![screens](/00_grid-dices/screen.png)
+![screens](/00_grid-dices/screen-grid.png)
 
 
 ## Samma layout, olika tekniker
