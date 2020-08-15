@@ -2,6 +2,12 @@
 
 # CSS Grid Bootcamp
 
+## Grid dices
+Använd endast HTML och CSS med ett static grid för att göra en tärnings 6 olika sidor.
+
+![screens](/00_grid-dices/screen.png)
+
+
 ## Samma layout, olika tekniker
 
 **Static grid** kallas det när *grid-items* placeras ut i grid-systemet med exakta positioner. Här använder man sig av grid-column-start, grid-column-end, grid-row-start och grid-row-end. Ex.
