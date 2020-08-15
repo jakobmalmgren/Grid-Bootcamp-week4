@@ -3,7 +3,7 @@
 # CSS Grid Bootcamp
 
 ## Grid dices
-Använd endast HTML och CSS med ett static grid för att göra en tärnings 6 olika sidor. Gridsystemet bör vara upsat enligt skissed nedan.
+Använd endast HTML och CSS med ett static grid för att göra en tärnings 6 olika sidor. Gridsystemet bör vara upsatt enligt skissen nedan för bästa resultat.
 
 ![screens](/00_grid-dices/screen-grid.png)
 
