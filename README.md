@@ -10,7 +10,7 @@ Använd endast HTML och CSS med ett grid för att göra en tärnings 6 olika sid
 |**A**|static|
 |**B**|grid templates|
 
-![screens](/00_grid-dices/screen-grid.png)
+![screens](/00_grid-dices-A/screen-grid.png)
 
 Förslag på html-struktur:
 
