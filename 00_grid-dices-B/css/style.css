@@ -1,16 +1,16 @@
 body {
-    margin: 0;
-    height: 100vh;
-    background: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4rem;
-    color: rgba(0, 0, 0, .6);
+  margin: 0;
+  height: 100vh;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.dice {
+/* .dice {
     background: #fff;
     border: 2px solid #222;
     border-radius: .5rem;
@@ -80,4 +80,74 @@ body {
     "side-1 . side-2"
     "side-3 . side-4"
     "side-5 . side-6";
+} */
+.dice {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  gap: 1rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+aside {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+}
+.dice aside:nth-child(1) {
+  grid-area: one;
+}
+.dice aside:nth-child(2) {
+  grid-area: two;
+}
+.dice aside:nth-child(3) {
+  grid-area: three;
+}
+.dice aside:nth-child(4) {
+  grid-area: four;
+}
+.dice aside:nth-child(5) {
+  grid-area: five;
+}
+.dice aside:nth-child(6) {
+  grid-area: six;
+}
+.dice.dots-1 {
+  grid-template-areas:
+    " . . . "
+    " . one . "
+    " . . . ";
+}
+.dice.dots-2 {
+  grid-template-areas:
+    " one . . "
+    " . . . "
+    " . . two";
+}
+.dice.dots-3 {
+  grid-template-areas:
+    " one . . "
+    " . two . "
+    " . . three";
+}
+.dice.dots-4 {
+  grid-template-areas:
+    " one . two "
+    " . . . "
+    " three . four";
+}
+.dice.dots-5 {
+  grid-template-areas:
+    " one . two "
+    " . five . "
+    " three . four";
+}
+.dice.dots-6 {
+  grid-template-areas:
+    " one . two"
+    " three . four"
+    " five . six";
 }
