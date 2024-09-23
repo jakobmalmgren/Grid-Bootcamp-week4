@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     height: 100vh;
     background: #eee;
@@ -51,6 +51,53 @@ aside {
 footer {
     grid-area: footer;
 }
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4fr 1fr 10fr 2fr;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+}
 
-
-
+header {
+  grid-area: header;
+  background-color: blue;
+}
+nav {
+  background-color: green;
+  grid-area: nav;
+}
+main {
+  background-color: grey;
+  grid-area: main;
+}
+aside {
+  background-color: aqua;
+  grid-area: aside;
+}
+footer {
+  background-color: blueviolet;
+  grid-area: footer;
+}
