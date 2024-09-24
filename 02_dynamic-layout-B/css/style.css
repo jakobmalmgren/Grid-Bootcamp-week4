@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     height: 100vh;
     background: #eee;
@@ -74,4 +74,87 @@ aside {
 
 footer {
     grid-area: footer;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+section,
+footer {
+  background-color: grey;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper > *:not(main) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  gap: 0.5rem;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 3rem 10rem 30rem 8rem 8rem 8rem;
+  grid-template-areas:
+    "nav   nav   nav   nav nav nav   nav   nav  nav nav nav nav"
+    "header header header header header header header header header header header header"
+    "main main main main main main main main aside aside aside aside"
+    "sect-a sect-a sect-a sect-a sect-b sect-b sect-b sect-b sect-c sect-c sect-c sect-c"
+    "sect-d sect-d sect-d sect-e sect-e sect-e sect-f sect-f sect-f sect-g sect-g sect-g"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+header {
+  background-color: grey;
+  grid-area: header;
+}
+nav {
+  background-color: grey;
+  grid-area: nav;
+}
+main {
+  background-color: red;
+  grid-area: main;
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+aside {
+  background-color: grey;
+  grid-area: aside;
+}
+.sect-a {
+  grid-area: sect-a;
+}
+.sect-b {
+  grid-area: sect-b;
+}
+.sect-c {
+  grid-area: sect-c;
+}
+.sect-d {
+  grid-area: sect-d;
+}
+.sect-e {
+  grid-area: sect-e;
+}
+.sect-f {
+  grid-area: sect-f;
+}
+.sect-g {
+  grid-area: sect-g;
+}
+footer {
+  grid-area: footer;
 }
