@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     height: 100vh;
     background: #eee;
@@ -70,4 +70,75 @@ section.col-3 {
 footer {
     grid-column: auto / span 12;
     height: 12rem;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.wrapper > *:not(main) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 90%;
+  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+nav {
+  background-color: rgb(157, 171, 167);
+  grid-column: auto/span 12;
+  height: 3rem;
+}
+header {
+  background-color: rgb(157, 171, 167);
+  grid-column: auto / span 12;
+  height: 17rem;
+}
+main {
+  background-color: red;
+  display: grid;
+
+  padding: 1rem;
+  gap: 1rem;
+  grid-column: auto / span 8;
+  /* height: 36rem; */
+  flex-direction: column;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  background-color: rgb(157, 171, 167);
+}
+aside {
+  background-color: rgb(157, 171, 167);
+  grid-column: auto / span 4;
+  height: 40rem;
+}
+.col-4 {
+  grid-column: auto / span 4;
+  background-color: rgb(157, 171, 167);
+  height: 12rem;
+}
+.col-3 {
+  grid-column: auto / span 3;
+  background-color: rgb(157, 171, 167);
+  height: 12rem;
+}
+
+footer {
+  background-color: rgb(157, 171, 167);
+  grid-column: auto / span 12;
+  height: 12rem;
 }
