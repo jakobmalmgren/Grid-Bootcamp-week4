@@ -1,21 +1,21 @@
-body {
-    margin: 0;
-    height: 100vh;
-    background: #eee;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4rem;
-    color: rgba(0, 0, 0, .6);
+/* body {
+  margin: 0;
+  height: 100vh;
+  background: #eee;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .wrapper {
-    margin: 2rem auto;
-    display: grid;
-    max-width: 800px;
-    width: 100%;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 3rem 16rem auto 12rem 12rem auto 12rem;
-    grid-template-areas: 
+  margin: 2rem auto;
+  display: grid;
+  max-width: 800px;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 3rem 16rem auto 12rem 12rem auto 12rem;
+  grid-template-areas:
     "nav nav nav nav nav nav"
     "header header header header header header"
     "main main main main sidebar sidebar"
@@ -23,85 +23,216 @@ body {
     "big-c big-c big-c big-d big-d big-d"
     "gallery gallery gallery gallery gallery gallery"
     "footer footer footer footer footer footer";
-    gap: .5rem;
+  gap: 0.5rem;
 }
 
 .wrapper > * {
-    background: rgba(0, 0, 0, .2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
-    grid-area: nav;
+  grid-area: nav;
 }
 
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
-
 main {
-    grid-area: main;
-    padding: .25rem .5rem;
-    flex-direction: column;
-    align-items: flex-start;
-    background: rgba(255, 40, 40, .6) !important;
+  grid-area: main;
+  padding: 0.25rem 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(255, 40, 40, 0.6) !important;
 }
 
 main article {
-    width: 100%;
-    height: 12rem;
-    background: rgba(190, 190, 190, 1);
-    margin: .25rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 12rem;
+  background: rgba(190, 190, 190, 1);
+  margin: 0.25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 aside {
-    grid-area: sidebar;
-    padding: .25rem .5rem;
-    flex-direction: column;
-    justify-content: flex-start !important;
-    align-items: flex-start;
-    background: rgba(255, 234, 40, 0.6) !important;
+  grid-area: sidebar;
+  padding: 0.25rem 0.5rem;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: flex-start;
+  background: rgba(255, 234, 40, 0.6) !important;
 }
 
 aside article {
-    width: 100%;
-    height: 8rem;
-    background: rgba(190, 190, 190, 1);
-    margin: .25rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 8rem;
+  background: rgba(190, 190, 190, 1);
+  margin: 0.25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-article.big-a { grid-area: big-a; }
-article.big-b { grid-area: big-b; }
-article.big-c { grid-area: big-c; }
-article.big-d { grid-area: big-d; }
+article.big-a {
+  grid-area: big-a;
+}
+article.big-b {
+  grid-area: big-b;
+}
+article.big-c {
+  grid-area: big-c;
+}
+article.big-d {
+  grid-area: big-d;
+}
 
 .gallery {
-    grid-area: gallery;
-    background: rgba(40, 255, 130, 0.6);
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: .5rem;
-    gap: .5rem;
-    grid-auto-rows: 10rem;
+  grid-area: gallery;
+  background: rgba(40, 255, 130, 0.6);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0.5rem;
+  gap: 0.5rem;
+  grid-auto-rows: 10rem;
 }
 
 .gallery .img {
-    background: rgba(190, 190, 190, 1);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: rgba(190, 190, 190, 1);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.wrapper > *:not(main, aside, .gallery) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 80%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2rem 15rem 34rem 12rem 12rem 30rem 6rem;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "header header header header header header"
+    "main main main main aside aside"
+    "a a a b b b"
+    "c c c d d d"
+    "g g g g g g"
+    "footer footer  footer  footer  footer  footer ";
+}
+
+nav {
+  background-color: black;
+  grid-area: nav;
+}
+header {
+  background-color: green;
+  grid-area: header;
+}
+main {
+  display: grid;
+  gap: 0.4rem;
+  background-color: red;
+  grid-area: main;
+  padding: 0.4rem;
+}
+main article {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  display: grid;
+}
+aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  padding: 0.4rem;
+  gap: 0.4rem;
+  background-color: rgb(189, 231, 134);
+  grid-area: aside;
+  /* grid-template-areas:
+    "ar "
+    "ar"
+    "ar"
+    "ar"
+    "ar"
+    "ar"; */
+}
+aside article {
+  grid-column: auto / span 1;
+  grid-row: auto / span 2;
+  /* grid-area: ar; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+.big-a {
+  grid-area: a;
+  background-color: blue;
+}
+.big-b {
+  grid-area: b;
+  background-color: blue;
+}
+.big-c {
+  grid-area: c;
+  background-color: blue;
+}
+.big-d {
+  grid-area: d;
+  background-color: blue;
+}
+.gallery {
+  grid-area: g;
+  display: grid;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: green;
+
+  /* grid-template-areas:
+    "img img img img img img"
+    "img img img img img img"
+    "img img img img img img"; */
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* grid-area: img; */
+  grid-column: auto / span 1;
+  background-color: grey;
+}
+
+/* hur göra med grid template areas? */
+
+footer {
+  grid-area: footer;
+  background-color: blue;
 }
