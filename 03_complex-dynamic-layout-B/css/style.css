@@ -145,7 +145,7 @@ body {
 }
 
 nav {
-  background-color: black;
+  background-color: rgb(201, 182, 182);
   grid-area: nav;
 }
 header {
@@ -213,9 +213,11 @@ aside article {
   padding: 0.5rem;
   gap: 0.5rem;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   background-color: green;
+  grid-auto-rows: auto;
 
+  /* vill veta mer om denna */
   /* grid-template-areas:
     "img img img img img img"
     "img img img img img img"
